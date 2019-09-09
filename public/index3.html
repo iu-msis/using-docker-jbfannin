@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Footer-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+    <nav class="navbar navbar-inverse" class="container">
+      <div class="container-fluid">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+          <a class="navbar-brand" href="index.html">Travel Blog</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index2.html">About Me</a></li>
+          <li><a href="index3.html">Library</a></li>
+      </ul>
+      </div>
+      </div>
+    </nav>
+</head>
+
+<body class="container">
+  <div class="banner">
+    <a href="images/books.jpg"> <image class="banner-image img-thumbnail" src="images/books.jpg" alt="Library book"></a>
+  </div>
+
+  <h1>Reading List</h1>
+  <table class="table" id=tablesort>
+  <thead class="thead-dark">
+    <tr>
+      <th>#</th>
+      <th>Title</th>
+      <th>Author(s)</th>
+      <th>Year Published</th>
+      <th>Publisher</th>
+      <th>Page Count</th>
+      <th>MSRP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td type="string">The Kite Runner</td>
+      <td type="string">Khaled Hosseini</td>
+      <td type="date">2003</td>
+      <td type="string">Riverhead Books</td>
+      <td type="integer">372</td>
+      <td type="currency">$13.95</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td type="string">Beautiful Chaos</td>
+      <td type="string">R.M. Drake</td>
+      <td type="date">2014</td>
+      <td type="string">Vintage Wild</td>
+      <td type="integer">238</td>
+      <td type="currency">$18.00</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td type="string">The Alchemist</td>
+      <td type="string">Paulo Coelho</td>
+      <td type="date">1995</td>
+      <td type="string">HarperTorch</td>
+      <td type="integer">163</td>
+      <td type="currency">$11.99</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td type="string">One Word That Will Change Your Life</td>
+      <td type="string">Jon Gordon, Dan Britton, Jimmy Page</td>
+      <td type="date">2012</td>
+      <td type="string">Wiley</td>
+      <td type="integer">115</td>
+      <td type="currency">$12.33</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+<br>
+
+<h2>Add to Reading List</h2>
+<form>
+  <div class="form-group">
+    <h4><label for="title">Title</label><h4>
+    <input type="text" class="form-control" id="title" placeholder="Title">
+  </div>
+  <div class="form-group">
+    <h4><label for="author">Author(s)</label><h4>
+    <input type="text" class="form-control" id="author" placeholder="Author(s)">
+  </div>
+  <div class="form-group">
+    <h4><label for="yearPublished">Year Published</label><h4>
+    <input type="date" class="form-control" id="yearPublished" placeholder="Year Published">
+  </div>
+  <div class="form-group">
+    <h4><label for="publisher">Publisher</label><h4>
+    <input type="text" class="form-control" id="publisher" placeholder="Publisher">
+  </div>
+  <div class="form-group">
+    <h4><label for="pageCount">Page Count</label><h4>
+    <input type="integer" class="form-control" id="pageCount" placeholder="Page Count">
+  </div>
+  <div class="form-group">
+    <h4><label for="msrp">MSRP</label><h4>
+    <input type="currency" class="form-control" id="msrp" placeholder="MSRP">
+  </div>
+   <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+<!-- Tablesort plugin from http://tristen.ca/tablesort/demo/-->
+<script src="js/tablesort.min.js"></script>
+<script>
+  new Tablesort(document.getElementById('tablesort'));
+</script>
+
+<footer>
+  <div class="container text-center">
+  <a href="https://www.facebook.com/jfannin316" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/johnbfannin" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com/johnfannin/" class="fa fa-instagram"></a>
+  <a href="https://www.linkedin.com/in/johnbfannin/" class="fa fa-linkedin"></a>
+<br>
+  <div class="footer">
+    <p>Contributions:<p>
+    <p>
+        <a class="website" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">Bootstrap</a> |
+        <a class="website" href="https://www.w3schools.com/howto/howto_css_social_media_buttons.asp">w3Schools</a> |
+        <a class="website" href="https://unsplash.com">UnSplash</a>
+    </p>
+  </div>
+  </div>
+</footer>
+
+</html>
