@@ -38,30 +38,27 @@
     <a href="images/ian-dooley-3NCA3tbaE5I-unsplash.jpg"><image class="banner-image img-thumbnail" src="images/ian-dooley-3NCA3tbaE5I-unsplash.jpg" alt="Ian Dooley, Unsplash"></a>
   </div>
 
-  <div class="row">
-      <div id="randomuser">
+<!--Addition of randomuser from randomuser.me-->
+  <div class="row" id="randomuser">
+      <div class="col-xs-6">
         <center>
-        <a :href=users.picture.large><image :src=users.picture.large id="london" class="img-thumbnail"></a>
-
+        <a :href=users.picture.large><image id="london" :src=users.picture.large class="img-thumbnail"></a>
+        </center>
+      </div>
+      <div class="col-xs-6">
         <h4>
           Name: {{users.name.first}} {{users.name.last}}
         </h4>
         <h4>Country of Origin: {{users.nat}}</h4>
-        <h4>Country of Residence: United States of America</h4>
         <h4>Birthdate: {{users.dob.date}}</h4>
         <h4>Age: {{users.dob.age}}</h4>
-        <br>
-        <br>
-        <h4>Email Me!</h4>
-          <a class="btn btn-primary btn-lg" href="mailto:someone@example.com?Subject=Hello%20again" target="_top" role="button">
+        <h4>Email:
+          <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top" role="button">
             {{users.email}}</a>
-      </center>
-
+        </h4>
       </div>
   </div>
-    <p>
-    </p>
-  </div>
+  <!--script for randomuser from randomuser.me above-->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="js/randomuser.js"></script>
 </body>
