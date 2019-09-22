@@ -56,6 +56,10 @@
           <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top" role="button">
             {{users.email}}</a>
         </h4>
+        <br>
+        <form @submit.prevent="fetchUsers()">
+              <button class="btn btn-primary">New profile</button>
+        </form>
       </div>
   </div>
   <!--script for randomuser from randomuser.me above-->
